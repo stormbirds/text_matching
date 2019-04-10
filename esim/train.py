@@ -1,13 +1,15 @@
 import tensorflow as tf
-import data_prepare
 from tensorflow.contrib import learn
 import numpy as np
-from esim import esim_model
-import config as config
 from tqdm import tqdm
 from sklearn.metrics import f1_score
 from sklearn import metrics
 import os
+import sys
+sys.path.append("..")
+import data_prepare
+from esim import esim_model
+import config as config
 
 con = config.Config()
 parent_path = os.path.dirname(os.getcwd())
